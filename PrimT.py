@@ -13,7 +13,7 @@ class Graph():
         with open(filename,"r") as file:
             for line in file:
                 u, v, weight = map(int, line.split())
-                self.graph[u][v] = self.graph[u][v] = weight # undirected graphs.
+                self.graph[u][v] = self.graph[v][u] = weight # undirected graphs.
 
  
     # function to print
